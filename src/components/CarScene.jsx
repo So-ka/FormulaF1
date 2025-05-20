@@ -14,6 +14,7 @@ export default function CarScene() {
   return (
     <>
     
+
     <Canvas
       shadows
       camera={{ position: [5, 100, 10], fov: 45 }}
@@ -21,13 +22,15 @@ export default function CarScene() {
     >
 
       {/* lights */}
-      <hemisphereLight intensity={0.6} />
+      <hemisphereLight intensity={0.2} />
+
       <spotLight position={[10, 15, 10]} angle={0.3} castShadow />
 
       {/* model */}
       <Car />
 
       {/* nice HDRI background */}
+      
       <Environment preset="warehouse" />
 
       {/* mouse / touch look‑around */}
