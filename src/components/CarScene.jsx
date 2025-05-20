@@ -13,6 +13,7 @@ export default function CarScene() {
 
   return (
     <>
+    
     <Canvas
       shadows
       camera={{ position: [5, 100, 10], fov: 45 }}
